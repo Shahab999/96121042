@@ -25,7 +25,7 @@ Route::put('edittool', [ToolController::class, 'edit'])->name('edittool');
 Route::get('showtool/{id}', [ToolController::class, 'show'])->name('showtool');
 Route::get('deletetool/{id}', [ToolController::class, 'destroy'])->name('deletetool');
 
-Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
+Route::get('dashboard', [CustomAuthController::class, 'dashboard'])->name('dashboard'); 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
