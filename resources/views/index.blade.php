@@ -28,18 +28,18 @@
         <ul class="nav">
           <li class="nav-item nav-profile border-bottom">
             <a href="#" class="nav-link flex-column">
-              <div class="nav-profile-image">
-                <img src="{{url('assets/images/faces/face3.jpg')}}" alt="profile" />
+              <!--<div class="nav-profile-image">
+                <img src="{{url('assets/images/faces/face3.jpg')}}" alt="profile" />-->
                 <!--change to offline or busy as needed-->
-              </div>
-              <div class="nav-profile-text d-flex ms-0 mb-3 flex-column">
-                <span class="font-weight-semibold mb-1 mt-2 text-center">Antonio Olson</span>
-                <span class="text-secondary icon-sm text-center">$3499.00</span>
-              </div>
+              <!--</div>-->
+              <!--<div class="nav-profile-text d-flex ms-0 mb-3 flex-column">
+                <span class="font-weight-semibold mb-1 mt-2 text-center">Antonio Olson</span>-->
+                <!--<span class="text-secondary icon-sm text-center">$3499.00</span>-->
+              <!--</div>-->
             </a>
           </li>
           <li class="nav-item pt-3">
-            <a class="nav-link d-block" href="index.html">
+            <a class="nav-link d-block" href="{{route('Tools.index')}}">
               <img class="sidebar-brand-logo" src="{{url('assets/images/logo.svg')}}" alt="" />
               <img class="sidebar-brand-logomini" src="{{url('assets/images/logo-mini.svg')}}" alt="" />
               <div class="small font-weight-light pt-1">Responsive Dashboard</div>
@@ -57,11 +57,12 @@
             <span class="nav-item-head">Template Pages</span>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{route('dashboard')}}">
               <i class="mdi mdi-compass-outline menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+<!--
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-crosshairs-gps menu-icon"></i>
@@ -106,6 +107,7 @@
               <span class="menu-title">Tables</span>
             </a>
           </li>
+-->
           <li class="nav-item pt-3">
             <a class="nav-link" href="http://bootstrapdash.com/demo/plus-free/documentation/documentation.html" target="_blank">
               <i class="mdi mdi-file-document-box menu-icon"></i>
@@ -262,7 +264,7 @@
                 </div>
               </li>
               <li class="nav-item nav-logout d-none d-lg-block">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{route('Tools.index')}}">
                   <i class="mdi mdi-home-circle"></i>
                 </a>
               </li>
